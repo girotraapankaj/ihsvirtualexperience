@@ -1,2 +1,8 @@
 /* below the fold CSS goes here */
 
+header nav {
+    margin: unset;
+}
+header .nav-brand {
+    flex-basis: max-content;
+}
