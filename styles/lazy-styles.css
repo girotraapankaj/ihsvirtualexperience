@@ -6,3 +6,11 @@ header nav {
 header .nav-brand {
     flex-basis: max-content;
 }
+header .nav-brand p a {
+    vertical-align: super;
+}
+@media (min-width: 900px) {
+    header nav .nav-sections .nav-drop[aria-expanded="true"]::after {
+        border-color: #ee1100;
+    }
+}
