@@ -220,15 +220,15 @@ main img {
   width: 100%;
 }
 
-main .section {
+/* main .section {
   padding: 64px 16px;
-}
+} */
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   main .section {
     padding: 64px 32px;
   }
-}
+} */
 
 @media (min-width: 900px) {
   .section > div {
@@ -240,4 +240,73 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+.page-bottom {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    transparent
+  ), url('https://ihsvirtualexperience.com/wp-content/uploads/2021/05/homepage-bottom.png');
+  height: 500px;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.goal-section-wrapper {
+    padding: 56px 26px;
+    display: flex;
+    justify-content: center;
+    max-width: 760px !important;
+    border: 4px solid white;
+    background-color: rgba(255, 255, 255, 0.7);
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: rgb(76, 73, 72);
+}
+
+.goal-section.block strong{
+  color: #ee1100;
+}
+
+.section.highlight.cards-container{
+
+}
+
+.highlight .columns div div {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin: 16px;
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  grid-column-gap: 20px;
+  height: 140px;
+}
+
+.highlight .columns div div :first-child{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+ 
+}
+
+.highlight .columns div div :nth-child(2){
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: 0px;
+}
+
+.highlight .columns div div :nth-child(3){
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+.highlight .columns div div :nth-child(4){
+  grid-column: 1/ span 2;
+  grid-row: 3;
+  text-align: right;
 }
