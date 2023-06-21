@@ -383,6 +383,12 @@ main .section.highlight {
  background-color: #ffffff;
 }
 
+main .section.highlight.who-we-are-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
 .who-we-are {
     border-left: 6px solid #ee1100;
     padding-left: 24px;
