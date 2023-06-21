@@ -376,3 +376,7 @@ main .section.highlight {
   }
 }
 
+main .section.highlight {
+ background-color: #ffffff;
+}
+
