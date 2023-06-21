@@ -19,3 +19,8 @@ header .nav-brand {
     width: 100px;
     height: 75px;
 }
+
+.footer-wrapper .footer p {
+    text-align: center;
+    font-size: 10px;
+}
