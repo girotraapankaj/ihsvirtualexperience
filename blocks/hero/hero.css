@@ -38,12 +38,12 @@ main .hero img {
   height: 100%;
 }
  
-.hero-container h1 {
+main .hero-container h1 {
     width: 600px;
     font-size: 23px;
     margin-left: 250px;
 }
 
-.hero-container h1 strong {
+main .hero-container h1 strong {
     font-size: 42px;
 }
