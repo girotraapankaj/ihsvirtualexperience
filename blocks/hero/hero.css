@@ -39,9 +39,7 @@ main .hero img {
 }
  
 main .hero-container h1 {
-    width: 600px;
     font-size: 23px;
-    margin-left: 250px;
 }
 
 main .hero-container h1 strong {
