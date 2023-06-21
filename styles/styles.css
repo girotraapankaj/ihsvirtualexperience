@@ -376,7 +376,16 @@ main .section.highlight {
   }
 }
 
+
+
+/* custom css */
 main .section.highlight {
  background-color: #ffffff;
+}
+
+.who-we-are {
+    border-left: 6px solid #ee1100;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
