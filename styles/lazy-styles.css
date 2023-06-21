@@ -6,3 +6,16 @@ header nav {
 header .nav-brand {
     flex-basis: max-content;
 }
+
+
+/* footer */
+
+.footer-wrapper .footer .footer-logo div {
+    text-align: center;
+}
+
+
+.footer-wrapper .footer .footer-logo div img {
+    width: 100px;
+    height: 75px;
+}
