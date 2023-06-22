@@ -12,6 +12,7 @@ main .hero {
   position: relative;
   padding: 32px;
   min-height: 300px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
 }
 
 main .hero h1 {
@@ -34,8 +35,8 @@ main .hero picture {
 
 main .hero img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
 }
  
 main .hero-container h1 {
