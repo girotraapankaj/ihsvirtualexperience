@@ -388,11 +388,11 @@ main .section.highlight {
  
 }
 
-@media(max-width: 600px) {
+/* @media(max-width: 600px) {
   header .nav-wrapper {
     position: fixed;
   }
-}
+} */
 
 
 
