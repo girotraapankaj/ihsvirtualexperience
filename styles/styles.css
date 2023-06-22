@@ -416,6 +416,7 @@ main .section.highlight.who-we-are-container {
     align-items: center;
     grid-template-columns: 1fr;
 }
+}
 
 @media (min-width: 900px) {
     main .section.highlight.who-we-are-container {
