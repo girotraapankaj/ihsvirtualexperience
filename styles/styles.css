@@ -446,7 +446,7 @@ main .section.highlight.who-we-are-container {
     font-weight: 600;
 }
 
-.default-content-wrapper {
+.section > .default-content-wrapper {
     font-size: 20px;
     line-height: 2;
     color: #4c4948;
@@ -457,7 +457,13 @@ main .section.highlight.who-we-are-container {
 }
 
 @media(max-width: 900px){
-  .default-content-wrapper {
+  .section > .default-content-wrapper {
+    margin-left: 20rem;
+}
+}
+
+@media(max-width: 1300px){
+ .section > .default-content-wrapper {
     margin-left: 20rem;
 }
 }
