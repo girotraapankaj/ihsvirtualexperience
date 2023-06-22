@@ -369,7 +369,7 @@ header nav .nav-sections > ul > li[aria-expanded="true"] > ul {
   }
 
   .nav-drop[aria-expanded="false"] > span::after {
-    content: url("../../icons/chevrdon-down.svg");
+    content: url("../../icons/chevron-down.svg");
     margin-left: 10px;
   }
 

@@ -67,8 +67,10 @@ body.appear {
   display: unset;
 }
 
-header {
-  height: var(--nav-height);
+@media (min-width: 600px){
+  header {
+    height: var(--nav-height);
+  }  
 }
 
 h1, h2, h3,
