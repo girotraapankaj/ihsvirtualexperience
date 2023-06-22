@@ -67,11 +67,11 @@ body.appear {
   display: unset;
 }
 
-/* @media (min-width: 1300px){
+@media (min-width: 1300px){
   header {
     height: var(--nav-height);
   }  
-} */
+}
 
 h1, h2, h3,
 h4, h5, h6 {
