@@ -195,7 +195,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .nav-drop {
     position: relative;
-    padding-right: 16px;
+    /* padding-right: 16px; */
     cursor: pointer;
   }
 
@@ -210,9 +210,10 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 2em;
+    gap: 1.5em;
     margin: 0;
     font-size: var(--body-font-size-xs);
+    padding-top: 10px;
   }
 
   header nav .nav-sections > ul > li {
@@ -351,7 +352,7 @@ header nav .nav-sections > ul > li[aria-expanded="true"] > ul {
 
   .nav-drop[aria-expanded="false"] > span::after {
     content: url("../../icons/chevron-down.svg");
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
 
@@ -385,7 +386,7 @@ header nav .nav-sections > ul > li[aria-expanded="true"] > ul {
 
   .nav-drop[aria-expanded="false"] > span::after {
     content: url("../../icons/chevron-down.svg");
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   .nav-drop > span {
