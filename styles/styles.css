@@ -413,3 +413,17 @@ main .section.highlight.who-we-are-container {
     padding-right: 24px;
 }
 
+.who-we-are div > p:first-child {
+    color: #ee1100;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.who-we-are div > p:last-child {
+    ont-size: 16px;
+    line-height: 1.3;
+    color: #4c4948;
+    font-weight: 600;
+}
+
