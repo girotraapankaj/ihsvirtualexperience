@@ -387,6 +387,12 @@ main .section.highlight.who-we-are-container {
     display: flex;
     max-width: 1200px;
     margin: auto;
+    
+}
+@media(max-width: 600px){
+  main .section.highlight.who-we-are-container{
+    flex-direction: column;
+  }
 }
 
 .who-we-are {
