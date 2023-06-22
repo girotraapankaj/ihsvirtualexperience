@@ -67,7 +67,7 @@ body.appear {
   display: unset;
 }
 
-@media (min-width: 600px){
+@media (min-width: 1300px){
   header {
     height: var(--nav-height);
   }  
@@ -232,7 +232,7 @@ main img {
   }
 } */
 
-@media (min-width: 900px) {
+@media (min-width: 1300px) {
   .section > div {
     max-width: 1200px;
     margin: auto;
