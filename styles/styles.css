@@ -446,3 +446,19 @@ main .section.highlight.who-we-are-container {
     font-weight: 600;
 }
 
+.default-content-wrapper {
+    font-size: 20px;
+    line-height: 2;
+    color: #4c4948;
+    font-weight: bold;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+
+@media(max-width: 900px){
+  .default-content-wrapper {
+    margin-left: 20rem;
+}
+}
+
