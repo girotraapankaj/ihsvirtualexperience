@@ -245,11 +245,11 @@ main .section.highlight {
 }
 
 .page-bottom {
- /* background-image: linear-gradient(
+ background-image: linear-gradient(
     to bottom,
     rgb(255, 255, 255),
     transparent
-  ), url('../homepage-bottom.webp');*/
+  ), url('../homepage-bottom.webp');
   height: 500px;
   background-repeat: no-repeat;
   display: flex;
