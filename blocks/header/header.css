@@ -22,11 +22,11 @@ header nav {
 
 header nav[aria-expanded="true"] {
   grid-template:
-    'brand hamburger' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
+        'brand hamburger' var(--nav-height)
+        'sections sections' auto
+        'tools tools' auto; 
   overflow-y: auto;
-  min-height: 100vh;
+  height: 100%;
 }
 
 @media (min-width: 600px) {
@@ -174,8 +174,8 @@ header nav .nav-sections ul  {
 }
 
 header nav .nav-sections ul > li {
-  z-index: 1;
   font-weight: 700;
+  padding: 15px 0;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -278,3 +278,121 @@ header nav[aria-expanded="false"] .nav-tools{
   display: none;
 }
 
+header nav .nav-sections > ul > li[aria-expanded="true"] > ul {
+    display: block;
+    color: #4c4948;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  header nav .nav-brand p {
+    display: flex;
+    align-items: center;
+  }
+
+  header nav .nav-brand p picture {
+    display: block;
+    height: 100%;
+    /* width: 105px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  header nav .nav-brand p a {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 16px;
+    display: block;
+    width: 180px;
+    text-align: left;
+  }
+
+  header nav .nav-hamburger {
+    justify-content: end;
+    margin-right: 15px;
+  }
+
+  header nav .nav-sections ul {
+    text-align: center;
+  }
+  
+  header nav .nav-tools ul {
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    background-color: #eeeeee;
+  }
+
+  /* header nav .nav-tools {
+    padding-bottom: 20px;
+  } */
+
+  header nav .nav-brand {
+    margin-left: 15px;
+  }
+
+  header nav {
+    padding: 0px;
+  }
+
+  header nav[aria-expanded="true"] {
+    overflow-y: hidden;
+  }
+
+  header nav {
+    padding: 0px
+  }
+  
+  header nav .nav-tools ul{
+    margin: 0px;
+    padding: 10px;
+  }
+
+  header nav .nav-tools ul li{
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  header nav .nav-tools ul li:first-child{
+    border-bottom: 1px solid #979797;
+  }
+
+  .nav-drop[aria-expanded="true"] > span::after {
+    content: url("../../icons/menu.svg");
+    margin-left: 10px;
+    transform: rotate(180deg);
+    transform-origin: 50% 40%;
+  }
+
+  .nav-drop[aria-expanded="false"] > span::after {
+    content: url("../../icons/chevrdon-down.svg");
+    margin-left: 10px;
+  }
+
+
+  .nav-drop > span {
+    justify-content: center;
+    display: flex;
+  }
+  
+  header nav .nav-drop ul > li:last-child{
+    font-weight: bold;
+  }
+
+  header .nav-sections{
+    color: rgb(76, 73, 72);
+  }
+}
+/* 
+
+header nav .nav-sections ul > li > :first-child::before {
+    content: "aaaa";
+}
+header nav .nav-drop ul > li:last-child{
+  color:"red"
+}
+*/

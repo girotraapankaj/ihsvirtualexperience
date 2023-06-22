@@ -55,7 +55,7 @@ function toggleAllNavSections(sections, expanded = false) {
 function toggleMenu(nav, navSections, forceExpanded = null) {
   const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute('aria-expanded') === 'true';
   const button = nav.querySelector('.nav-hamburger button');
-  document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
+  //document.body.style.overflowY = (expanded || isDesktop.matches) ? '' : 'hidden';
   nav.setAttribute('aria-expanded', expanded ? 'false' : 'true');
   toggleAllNavSections(navSections, 'false');
   button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
@@ -113,6 +113,13 @@ export default async function decorate(block) {
     if (navSections) {
       navSections.querySelectorAll(':scope > ul > li').forEach((navSection) => {
         if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
+        var firstChild = navSection.childNodes[0];
+        if (firstChild.nodeType === Node.TEXT_NODE) {
+          var spanElement = document.createElement('span');
+          spanElement.appendChild(firstChild.cloneNode(true));
+          navSection.replaceChild(spanElement, firstChild);
+        }
+        
         navSection.addEventListener('click', () => {
           if (true) {
             const expanded = navSection.getAttribute('aria-expanded') === 'true';
